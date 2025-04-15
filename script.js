@@ -51,6 +51,7 @@ function renderQuestions() {
       choiceElement.setAttribute("value", choice);
       if (userAnswers[i] === choice) {
         choiceElement.checked = true;
+        choiceElement.setAttribute("checked", "true");
       }
       choiceElement.addEventListener("change", () => {
         userAnswers[i] = choice;
